@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <style>
+        table {
+            border-collapse:collapse;
+            table-layout:fixed;
+            word-break:break-all; 
+        }
+        th, td {
+			border:0.5px solid grey;
+		}
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <title>Audio Samples from "SANE-TTS: Stable And Natural End-to-End Multilingual Text-to-Speech"</title>
+    </head>
+    <body>
+        <h2>Audio Samples from "SANE-TTS: Stable And Natural End-to-End Multilingual Text-to-Speech"</h2>
+		<div><p><b>Paper:</b> SANE-TTS: Stable And Natural End-to-End Multilingual Text-to-Speech</p></div>
+        <div><p><b>Authors:</b> Hyunjae Cho, Wonbin Jung, Junhyeok Lee, Sang Hoon Woo @<a href="https://maum.ai">MINDsLab Inc.</a></p></div>
+        <p>We use 203.4 hours of internal and external speech corpora in four languages. The external datasets include LJ Speech, LibriTTS, KSS, AISHELL-3 and JVS dataset.</p>
+        
+		<h3>Contents</h3>
+		<div style="border:1px solid; padding:10px; width:250px; background-color:#E2E2E2;">
+			<a href="#synthesis">Multilingual Speech Synthesis</a>
+			<a href="#comparison">Comparison with Another Model</a><br>
+			<a href="#ablation_study">Ablation Study</a><br>
+            <a href="#Long Text">Long Text</a><br>
+            <a href="#Code Switching">Code Switching</a><br>
+            <!-- <a href="#citation">Citation</a><br> -->
+		</div>
+		<br>
+		<h3><a name="synthesis">Multilingual Speech Synthesis</a></h3>
+		
+        <table>
+			<colgroup>
+                <col width="10%">
+                <col width="18%">
+                <col width="18%">
+                <col width="18%">
+                <col width="18%">
+                <col width="18%">
+            </colgroup>
+            <thead>
+                <tr>
+					<th>Speaker</th>
+                    <td><div align="center"><p style="color:grey;"><i>Reference Speech</i></p></div></td>
+                    <td><div align="center"><p style="color:grey;">English Target: <br><i>I saw him come from your window, <br>and I saw all that passed between <br>you in the balcony.</i></p></div></td>
+                    <td><div align="center"><p style="color:grey;">Korean Target (Romanization): <br><i>언젠가 들은 적이 있는 것 같거든요.<br>(Eonjenga deul-eun jeog-i issneun geos gatgeodeun-yo.)</i></p></div></td>
+                    <td><div align="center"><p style="color:grey;">Japanese Target (Romanization): <br><i>許可書がなければここへは入れない。<br>(Kyoka-sho ga nakereba koko e wa hairenai.)</i></p></div></td>
+                    <td><div align="center"><p style="color:grey;">Chinese Target (Hanyu Pinyin): <br><i>替我播放相思风雨中<br>(Tì wǒ bòfàng xiāngsī fēngyǔ zhōng)</i></p></div></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td nowrap>LJ<br>(from English dataset)</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/gt_1.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/en_1.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/ko_1.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/ja_1.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/zh_1.wav" type="audio/wav"></audio></div></td>
+                </tr>
+                <tr>
+                    <td nowrap>LibriTTS4356<br>(from English dataset)</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/gt_2.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/en_2.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/ko_2.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/ja_2.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/zh_2.wav" type="audio/wav"></audio></div></td>
+                </tr>
+                <tr>
+                    <td nowrap>KSS<br>(from Korean dataset)</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/gt_3.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/en_3.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/ko_3.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/ja_3.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/zh_3.wav" type="audio/wav"></audio></div></td>
+                </tr>
+                <tr>
+                    <td nowrap>jvs001<br>(from Japanese dataset)</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/gt_4.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/en_4.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/ko_4.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/ja_4.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/zh_4.wav" type="audio/wav"></audio></div></td>
+                </tr>
+                <tr>
+                    <td nowrap>SSB0073<br>(from Chinese dataset)</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/gt_5.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/en_5.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/ko_5.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/ja_5.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/synthesis/zh_5.wav" type="audio/wav"></audio></div></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+		
+		<h3><a name="comparison">Comparison with Another Model</a></h3>
+		<p style="color:grey;">Text: <i>She saw him displace the bar and slip into the garden.</i></p>
+        <table>
+			<colgroup>
+                <col width="28%">
+                <col width="18%">
+                <col width="18%">
+                <col width="18%">
+                <col width="18%">
+            </colgroup>
+            <thead>
+                <tr>
+					<th>Model</th>
+                    <td><div align="center">English<br>(LibriTTS4356)</div></td>
+                    <td><div align="center">Korean<br>(KSS)</div></td>
+                    <td><div align="center">Japanese<br>(jvs001)</div></td>
+                    <td><div align="center">Chinese<br>(SSB0073)</div></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td nowrap>Ground Truth</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/comparison/gt_en.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/comparison/gt_ko.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/comparison/gt_ja.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/comparison/gt_zh.wav" type="audio/wav"></audio></div></td>
+                </tr>
+                <tr>
+                    <td nowrap><a href="https://arxiv.org/abs/2008.00768">Meta-Learning Model</a></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/comparison/meta_en.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/comparison/meta_ko.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/comparison/meta_ja.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/comparison/meta_zh.wav" type="audio/wav"></audio></div></td>
+                </tr>
+                <tr>
+                    <td nowrap><b>SANE-TTS</b></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/comparison/base_en.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/comparison/base_ko.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/comparison/base_ja.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/comparison/base_zh.wav" type="audio/wav"></audio></div></td>
+                </tr>
+            </tbody>
+        </table>
+		<p>Header of each column with audio samples is a language of a speaker's utterances in the dataset.</p>
+		<br>
+		
+        <h3><a name="ablation_study">Ablation Study</a></h3>
+		<p style="color:grey;">Text: <i>When she was left by herself the poor girl began to feel afraid.</i></p>
+        <table>
+			<colgroup>
+                <col width="28%">
+                <col width="18%">
+                <col width="18%">
+                <col width="18%">
+                <col width="18%">
+            </colgroup>
+            <thead>
+                <tr>
+					<th>Model</th>
+                    <td><div align="center">English<br>(LibriTTS4356)</div></td>
+                    <td><div align="center">Korean<br>(KSS)</div></td>
+                    <td><div align="center">Japanese<br>(jvs001)</div></td>
+                    <td><div align="center">Chinese<br>(SSB0073)</div></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td nowrap>Ground Truth</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/gt_en.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/gt_ko.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/gt_ja.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/gt_zh.wav" type="audio/wav"></audio></div></td>
+                </tr>
+                <tr>
+                    <td nowrap>SANE-TTS</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/base_en.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/base_ko.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/base_ja.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/base_zh.wav" type="audio/wav"></audio></div></td>
+                </tr>
+                <tr>
+                    <td nowrap>without DANN</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/dann_en.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/dann_ko.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/dann_ja.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/dann_zh.wav" type="audio/wav"></audio></div></td>
+                </tr>
+                <tr>
+                    <td nowrap>without Regularization</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/spk_en.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/spk_ko.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/spk_ja.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/spk_zh.wav" type="audio/wav"></audio></div></td>
+                </tr>
+                <tr>
+                    <td nowrap>with SDP</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/sdp_en.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/sdp_ko.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/sdp_ja.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/ablation_study/sdp_zh.wav" type="audio/wav"></audio></div></td>
+                </tr>
+            </tbody>
+        </table>
+		<p>Header of each column with audio samples is a language of a speaker's utterances in the dataset.</p>
+        <br>
+        <h3><a name="Long Text">Long Text</a></h3>
+		<p style="color:grey;">Text(120 words): <i>The gentleman in the plush shorts and cottons considering it no part of his duty to show the people from the office out, consistently declined to answer the bell, and they showed themselves out. 'Stop at the house with a green door, driver,' said the heavy gentleman. The door swung heavily after them, and they descended a small flight of steps. The young man disappeared into a private office with the stones, and Tom waited. As he entered it he saw a man looking over the wonderful craft. "But, up to the time I met you on Earthquake Island, I could form no plan for discovering Phantom Mountain, and learning the secret of the diamond makers," went on mr Jenks.</i></p>
+        <table>
+			<colgroup>
+                <col width="28%">
+                <col width="18%">
+                <col width="18%">
+                <col width="18%">
+                <col width="18%">
+            </colgroup>
+            <thead>
+                <tr>
+					<th>Model</th>
+                    <td><div align="center">English<br>(LibriTTS4356)</div></td>
+                    <td><div align="center">Korean<br>(KSS)</div></td>
+                    <td><div align="center">Japanese<br>(jvs001)</div></td>
+                    <td><div align="center">Chinese<br>(SSB0073)</div></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td nowrap>SANE-TTS</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/longtext/long_en.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/longtext/long_ko.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/longtext/long_ja.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/longtext/long_zh.wav" type="audio/wav"></audio></div></td>
+                </tr>
+            </tbody>
+        </table>
+		<p>Header of each column with audio samples is a language of a speaker's utterances in the dataset.</p>
+        <br>
+        <h3><a name="Code Switching">Code Switching</a></h3>
+		<p style="color:grey;">Text: <i>東京에 가서 麻辣烫 먹고싶다. Let's go.<br>(Tōkyōe gaseo Málà tàng meoggo sipda. Let's go.)</i></p>
+        <table>
+			<colgroup>
+                <col width="28%">
+                <col width="18%">
+                <col width="18%">
+                <col width="18%">
+                <col width="18%">
+            </colgroup>
+            <thead>
+                <tr>
+					<th>Model</th>
+                    <td><div align="center">English<br>(LibriTTS4356)</div></td>
+                    <td><div align="center">Korean<br>(KSS)</div></td>
+                    <td><div align="center">Japanese<br>(jvs001)</div></td>
+                    <td><div align="center">Chinese<br>(SSB0073)</div></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td nowrap>SANE-TTS</td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/codeswitch/en.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/codeswitch/ko.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/codeswitch/ja.wav" type="audio/wav"></audio></div></td>
+                    <td><div align="center"><audio controls="" style="width: 250px;"><source src="samples/codeswitch/zh.wav" type="audio/wav"></audio></div></td>
+                </tr>
+            </tbody>
+        </table>
+		<p>Header of each column with audio samples is a language of a speaker's utterances in the dataset.</p>
+    </body>
+</html>
